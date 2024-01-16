@@ -2,55 +2,70 @@ document.addEventListener('DOMContentLoaded', geralDoc);
 function geralDoc() {
     // Declaração de Variáveis
     const SectionHome = document.getElementById('home');   
-    const SectionQuienesSomos = document.getElementById('quienesSomos');
-    const SectionServicios = document.getElementById('servicios');
-    const SectionPortafolio = document.getElementById('portafolio');
-    const SectionContacto =  document.getElementById('contacto');
+    const SectionAbout = document.getElementById('about');
+    const SectionArtwork = document.getElementById('artwork');
+    const SectionPortfolio = document.getElementById('portfolio');
+    const SectionCommissions = document.getElementById('commissions');
+    const SectionContact =  document.getElementById('contact');
     const linkHome = document.getElementById('linkHome').addEventListener('click', margenHome);
-    const linkQuienesSomos = document.getElementById('linkQuienesSomos').addEventListener('click', margenSomos);
-    const linkServicios = document.getElementById('linkServicios').addEventListener('click', margenServicios);
-    const linkPortafolio = document.getElementById('linkPortafolio').addEventListener('click', margenPortafolio);
-    const linkContacto = document.getElementById('linkContacto').addEventListener('click', margenContacto);
+    const linkAbout = document.getElementById('linkAbout').addEventListener('click', marginAbout);
+    const linkArtwork = document.getElementById('linkArtwork').addEventListener('click', marginArtwork);
+    const linkPortfolio = document.getElementById('linkPortfolio').addEventListener('click', marginPortfolio);
+    const linkCommissions = document.getElementById('linkCommissions').addEventListener('click', marginCommissions);
+    const linkContact = document.getElementById('linkContact').addEventListener('click', marginContact);
     
     // Funções para a margem superior em relação ao menu fixo
     function margenHome() {
-        SectionHome.style.paddingTop = "0";
-        SectionQuienesSomos.style.paddingTop = "0";
-        SectionServicios.style.paddingTop = "0";
+        SectionHome.style.paddingTop = "50px";
+        SectionAbout.style.paddingTop = "0";
+        SectionArtwork.style.paddingTop = "0";
         SectionPortafolio.style.paddingTop = "0";
         SectionContacto.style.paddingTop = "0";
     }
 
-    function margenSomos() {
+    function marginAbout() {
         SectionHome.style.paddingTop = "0";
-        SectionQuienesSomos.style.paddingTop = "50px";
-        SectionServicios.style.paddingTop = "0";
-        SectionPortafolio.style.paddingTop = "0";
+        SectionAbout.style.paddingTop = "50px";
+        SectionArtwork.style.paddingTop = "0";
+        SectionPortfolio.style.paddingTop = "0";
+        SectionCommissions.style.paddingTop = "0";
         SectionContacto.style.paddingTop = "0";
     }
 
-    function margenServicios() {
+    function marginArtwork() {
         SectionHome.style.paddingTop = "0";
-        SectionQuienesSomos.style.paddingTop = "0";
-        SectionServicios.style.paddingTop = "75px";
-        SectionPortafolio.style.paddingTop = "0";
+        SectionAbout.style.paddingTop = "0";
+        SectionArtwork.style.paddingTop = "75px";
+        SectionPortfolio.style.paddingTop = "0";
+        SectionCommissions.style.paddingTop = "0";
         SectionContacto.style.paddingTop = "0";
     }
 
-    function margenPortafolio() {
+    function marginPortfolio() {
         SectionHome.style.paddingTop = "0";
-        SectionQuienesSomos.style.paddingTop = "0";
-        SectionServicios.style.paddingTop = "0";
-        SectionPortafolio.style.paddingTop = "75px";
+        SectionAbout.style.paddingTop = "0";
+        SectionArtwork.style.paddingTop = "0";
+        SectionPortfolio.style.paddingTop = "75px";
+        SectionCommissions.style.paddingTop = "0";
         SectionContacto.style.paddingTop = "0";
     }
 
-    function margenContacto() {
+    function marginCommissions() {
         SectionHome.style.paddingTop = "0";
-        SectionQuienesSomos.style.paddingTop = "0";
-        SectionServicios.style.paddingTop = "0";
-        SectionPortafolio.style.paddingTop = "0";
+        SectionAbout.style.paddingTop = "0";
+        SectionArtwork.style.paddingTop = "0";
+        SectionPortfolio.style.paddingTop = "0";
+        SectionCommissions.style.paddingTop = "75px";
         SectionContacto.style.paddingTop = "0";
+    }
+
+    function marginContact() {
+        SectionHome.style.paddingTop = "0";
+        SectionAbout.style.paddingTop = "0";
+        SectionArtwork.style.paddingTop = "0";
+        SectionPortfolio.style.paddingTop = "0";
+        SectionCommissions.style.paddingTop = "0";
+        SectionContact.style.paddingTop = "75px";
     }
 
     function mensaje() {
